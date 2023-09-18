@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De-Pokeify - Search Result</title>
+</head>
+<body>
+    <h1>Result:</h1>
+    <h2>Pokemon contained in the provided list:</h2>
+    <ul>
+        {% for word in contained_words %}
+            <li>{{ word }}</li>
+        {% endfor %}
+    </ul>
+    <h2>Tech Terms contained in the provided list:</h2>
+    <ul>
+        {% for word in not_contained_words %}
+            <li>{{ word }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
