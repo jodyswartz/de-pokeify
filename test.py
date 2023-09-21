@@ -10,7 +10,7 @@ class MyTestCase(unittest.TestCase):
     def test_index(self):
         response = self.main.get('/')
         self.assertEqual(response.status_code, 200)
-        self.assertIn(b'Enter a list:', response.data)
+        self.assertIn(b'Enter a comma-separated list:', response.data)
 
 
 if __name__ == '__main__':
