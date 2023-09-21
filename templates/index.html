@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>De-Pokeify App</title>
+        <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='index_styles.css') }}">
+    <title>De - Pokeify App</title>
 </head>
 <body>
-    <h1>Enter a list:</h1>
+    <h1><p style="font-family: 'Pokemon', sans-serif;">De-Pokeify</p></h1>
+    <h2>Enter a comma-separated list:</h2>
     <form action="/search" method="post">
-        <input type="text" name="input_list" required>
-        <input type="submit" value="De-Pokeify">
+        <textarea class="text-area" name="input_list" id="input_list" rows="4" cols="50" required></textarea>
+        <p><input class="submit-button" type="submit" value="Submit"></p>
     </form>
 </body>
 </html>
