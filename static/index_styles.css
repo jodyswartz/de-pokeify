@@ -1,0 +1,27 @@
+ * {
+    text-align: center;
+}
+
+h1, h2 {
+    color: #003153;
+}
+
+body {
+    background-color: #FDFD96; /* Hexadecimal color code for light gray */
+}
+
+@font-face {
+    font-family: 'Pokemon';
+    src: url('/static/Pokemon Solid.ttf') format('truetype');
+ }
+
+.text-area {
+    text-align:  left;
+}
+
+ .submit-button {
+    background-color: #FAF9F6;
+    width: 150px; /* Adjust the width as needed */
+    height: 75px; /* Adjust the height as needed */
+    font-size: 15px; /* Adjust the font size as needed */
+ }
