@@ -17,7 +17,13 @@
     </ul>
     <h2>Tech Terms contained in the provided list:</h2>
     <ul>
-        {% for word in not_contained_words %}
+        {% for word in tech_term_words %}
+            <li>{{ word }}</li>
+        {% endfor %}
+    </ul>
+        <h2>Unknown words contained in the provided list:</h2>
+    <ul>
+        {% for word in unknown_words %}
             <li>{{ word }}</li>
         {% endfor %}
     </ul>
