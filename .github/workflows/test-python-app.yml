@@ -20,6 +20,9 @@ jobs:
 
     - name : Install nltk Packages
       run: pip install nltk
+
+    - name : Install bs4 Packages
+      run: pip install bs4
    
     - name: Install pytest Package  
       run : pip install pytest
