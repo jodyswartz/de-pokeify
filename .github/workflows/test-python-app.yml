@@ -17,6 +17,9 @@ jobs:
       
     - name : Install flask Packages
       run: pip install flask
+
+    - name : Install nltk Packages
+      run: pip install nltk
    
     - name: Install pytest Package  
       run : pip install pytest
